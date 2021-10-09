@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
+import Navbar from "../../Components/Navbar/Navbar";
 import { Switch, Route } from "react-router-dom";
 import Explore from "../Explore/Explore";
 import NoMatch from "../../Pages/404Page/404Page";
@@ -8,6 +9,7 @@ import Profile from "../../Components/Profile/Profile";
 const Home = () => {
   return (
     <div>
+      <Navbar/>
       <Header />
       <Switch>
         <Route exact path="/" component={NewHome} />

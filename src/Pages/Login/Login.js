@@ -22,31 +22,52 @@ class Login extends React.Component {
   render() {
     const { email, pwd } = this.state;
     return (
-      <div className="login-div">
-        <div className="logo-div">
-          <Logo />
+          <div className="parent clearfix">
+        <div className="bg-illustration">
+          <img src="https://www.allfreefonts.co/wp-content/uploads/2020/07/scarletty-4.jpg" alt="logo" />
+          <div className="burger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    
         </div>
-        <div>
-          <form onSubmit={this.handleSubmit}>
-            <input
-              type="email"
-              placeholder="email..."
-              name="email"
-              required
-              onChange={this.handleChange}
-              value={email}
-            />
-            <input
-              type="password"
-              placeholder="password..."
-              name="pwd"
-              required
-              onChange={this.handleChange}
-              value={pwd}
-            />
-            <button onSubmit={this.handleSubmit}>Log in</button>
-          </form>
-        </div>
+        
+        <div className="login">
+          <div className="container">
+            <h1>Login to access to<br />your account</h1>
+        
+            <div className="login-form">
+              <form onSubmit={this.handleSubmit}>
+                <input
+                  type="email"
+                  placeholder="email..."
+                  name="email"
+                  required
+                  onChange={this.handleChange}
+                  value={email}
+                />
+                <input
+                  type="password"
+                  placeholder="password..."
+                  name="pwd"
+                  required
+                  onChange={this.handleChange}
+                  value={pwd}
+                />
+                <div className="remember-form">
+                  <input type="checkbox" />
+                  <span>Remember me</span>
+                </div>
+                <div className="forget-pass">
+                  <a href="#">Forgot Password ?</a>
+                </div>
+                <button type="submit" onSubmit={this.handleSubmit}>LOG-IN</button>
+              </form>
+            </div>
+        
+          </div>
+          </div>
       </div>
     );
   }
