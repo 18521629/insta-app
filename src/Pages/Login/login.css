@@ -41,10 +41,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  border: none;
-}
-
 *:focus {
   outline: none;
 }
@@ -55,6 +51,11 @@ img {
   clear: both;
 }
 
+h1{
+  color: #537895;
+  text-shadow: 2px 2px 4px #f794a4;
+  text-align: center;
+}
 .bg-illustration {
   position: relative;
   height: 100vh;
@@ -74,8 +75,18 @@ img {
   user-select: none;
   height: auto;
   margin: 19px 0 0 25px;
+  border-radius: 50%;
 }
 
+.login .container img{
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 @-webkit-keyframes bgslide {
   from {
     left: -100%;
@@ -275,12 +286,8 @@ img {
     height: 190px;
     text-align: center;
   }
-  .bg-illustration img {
-    width: 100px;
-    height: auto;
-    margin: 20px auto !important;
-    text-align: center;
-  }
+ 
+
   .bg-illustration .burger-btn {
     left: 33px;
     top: 29px;
@@ -320,6 +327,7 @@ img {
   .login .container h1 {
     font-size: 25px;
     margin-top: 40px;
+    text-shadow: 2px 2px #FF9999;
   }
   .login .container .login-form {
     margin-top: 90px;

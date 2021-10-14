@@ -4,14 +4,14 @@ import Login from "./Pages/Login/Login";
 import Home from "./Pages/Home/Home";
 import NoMatch from "./Pages/404Page/404Page";
 import { connect } from "react-redux";
+import BraceletPage from "./Pages/BraceletPage/BraceletPage";
 const App = ({ isLogin }) => {
   return (
     <div>
       <Switch>
-        {isLogin ? (
-          <Route path="/" render={() => <Home />} />
-        ) : (
-          <Route exact path="/" render={() => <Login />} />
+        {isLogin ? (<Route path="/" render={() => <Home />} />) : 
+        (
+          <Route exact path="/" render={() => <Login />} /> // sua cho nay thanh login
         )}
         <Route path="*" component={NoMatch} />
       </Switch>

@@ -9,7 +9,7 @@ import { store } from "./redux/store";
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter basename="/insta-app">
+    <BrowserRouter >
       <App />
     </BrowserRouter>
   </Provider>,
