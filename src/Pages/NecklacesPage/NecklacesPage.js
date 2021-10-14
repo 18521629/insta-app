@@ -1,9 +1,16 @@
 import React from "react";
 
+import Header from "../../Components/Header/Header";
+import Navbar from "../../Components/Navbar/Navbar";
+
 class NecklacesPage extends React.Component{
     render(){
         return(
-            <h1>This is necklaces page</h1>
+            <div>
+                <Navbar/>
+                <Header/>
+                <h1>This is for necklace page</h1>
+            </div>
         );
     }
 }
