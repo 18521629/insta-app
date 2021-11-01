@@ -4,7 +4,6 @@ import Login from "./Pages/Login/Login";
 import Home from "./Pages/Home/Home";
 import NoMatch from "./Pages/404Page/404Page";
 import { connect } from "react-redux";
-import BraceletPage from "./Pages/BraceletPage/BraceletPage";
 const App = ({ isLogin }) => {
   return (
     <div>

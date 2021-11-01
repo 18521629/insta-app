@@ -14,7 +14,7 @@ class CategoryItem extends React.Component{
                             <div className="card card_red text-center">
                                 <div className="title">
                                 <i className="fa fa-paper-plane" aria-hidden="true"></i>
-                                <h2>Dây chuyền handmade</h2>
+                                <h2>Tẩy Trang và Sữa Rửa Mặt</h2>
                                 </div>
                                 <div className="option">
                                 <ul>
@@ -22,7 +22,7 @@ class CategoryItem extends React.Component{
                                     <li><i className="fa fa-check" aria-hidden="true"></i>3 Suitable for pretty girls</li>
                                     </ul>
                                 </div>
-                                <Link to="/neck">Explore Now</Link>
+                                <Link to="/cleansing">Explore Now</Link>
                             </div>
                             </div>
                             
@@ -30,7 +30,7 @@ class CategoryItem extends React.Component{
                             <div className="card card_violet text-center">
                                 <div className="title">
                                 <i className="fa fa-plane" aria-hidden="true"></i>
-                                <h2>Vòng tay handmade</h2>
+                                <h2>Son Môi</h2>
                                 </div>
                                 <div className="option">
                                 <ul>
@@ -38,7 +38,7 @@ class CategoryItem extends React.Component{
                                     <li><i className="fa fa-check" aria-hidden="true"></i>Emphasize the beauty of women</li>
                                     </ul>
                                 </div>
-                                <Link to="/bra">Explore Now</Link>
+                                <Link to="/lipstick">Explore Now</Link>
                             </div>
                             </div>
 
@@ -46,7 +46,7 @@ class CategoryItem extends React.Component{
                             <div className="card card_four text-center">
                                 <div className="title">
                                 <i className="fa fa-rocket" aria-hidden="true"></i>
-                                <h2>Nhẫn handmade</h2>
+                                <h2>Trang điểm mắt</h2>
                                 </div>
                                 <div className="option">
                                 <ul>
@@ -54,7 +54,7 @@ class CategoryItem extends React.Component{
                                     <li><i className="fa fa-check" aria-hidden="true"></i>Your hands need to be taken care of</li>
                                     </ul>
                                 </div>
-                                <Link to="/ring">Explore Now</Link>
+                                <Link to="/eye">Explore Now</Link>
                             </div>
                             </div>
 
@@ -62,7 +62,7 @@ class CategoryItem extends React.Component{
                             <div className="card card_three text-center">
                                 <div className="title">
                                 <i className="fa fa-rocket" aria-hidden="true"></i>
-                                <h2>For men</h2>
+                                <h2>Phấn nền, Cushion các loại</h2>
                                 </div>
                                 <div className="option">
                                 <ul>
@@ -70,7 +70,7 @@ class CategoryItem extends React.Component{
                                     <li><i className="fa fa-check" aria-hidden="true"></i>Love of unique and strange bracelets</li>
                                     </ul>
                                 </div>
-                                <Link to="/men">Explore Now</Link>
+                                <Link to="/cushion">Explore Now</Link>
                             </div>
                             </div>
                         </div>
