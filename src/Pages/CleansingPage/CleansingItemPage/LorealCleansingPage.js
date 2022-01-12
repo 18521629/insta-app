@@ -3,6 +3,8 @@ import ImgSlider from "../../../Components/ProductItem/ImgSlider"
 import DetailPage from '../../DetailProductPage/DetailPage'
 import './index.css'
 import Colors from "../../../Components/Colors/Colors";
+import Rating from "../../../Components/Rating/Rating";
+import $ from 'jquery'
 
 class LorealCleansingPage extends React.Component{
     state = {
@@ -17,7 +19,7 @@ class LorealCleansingPage extends React.Component{
                 ],
                 "description": "Nước tẩy trang Loreal",
                 "content": "Nước Tẩy Trang L'Oréal Paris là dòng sản phẩm tẩy trang đến từ thương hiệu L'Oreal Paris, được ứng dụng công nghệ Micellar dịu nhẹ giúp làm sạch da, lấy đi bụi bẩn, dầu thừa và cặn trang điểm chỉ trong một bước, mang lại làn da thông thoáng, mềm mượt mà không hề khô căng.",
-                "price":128000,
+                "price":"128000đ",
                 "colors":["pink","blue","green"],
                 "count": 1
             }
@@ -36,6 +38,12 @@ class LorealCleansingPage extends React.Component{
         images[index].className = "active";
     }
 
+    _modalPopup = () => {
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+          })
+    }
+    
     componentDidMount(){
         const {index}= this.state
         this.myRef.current.children[index].className = "active"
@@ -44,6 +52,7 @@ class LorealCleansingPage extends React.Component{
     render(){
         const {products, index}= this.state
         return(
+            <div>
             <div className="app">
                 {
                     products.map(item => (
@@ -77,6 +86,41 @@ class LorealCleansingPage extends React.Component{
                         </div>
                     ))
                 }
+            </div>
+            <div className="container-fluid">
+                <div className="col-md-2">
+                    <h3>Gửi đánh giá sản phẩm</h3>
+                </div>
+                <div className="col-md-1">
+                    <Rating/>
+                </div>
+                <div className="col-md-1">
+                    <button className="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Gửi đánh giá</button>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Scarletty</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Cảm ơn bạn đã đánh giá
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+                
+                
+            </div>
+                
             </div>
         );
     }

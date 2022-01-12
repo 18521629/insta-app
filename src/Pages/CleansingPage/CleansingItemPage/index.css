@@ -45,6 +45,7 @@
 }
 .box .row span{
     color: crimson;
+    font-size: large;
 }
 
 .box .colors button{
@@ -102,4 +103,8 @@
     .thumb img{
         width: 50px;
     }
+}
+
+.rating{
+    align-items: center;
 }

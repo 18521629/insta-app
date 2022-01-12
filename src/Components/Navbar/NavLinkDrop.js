@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Switch, Route } from "react-router-dom";
+import CushionPage from '../../Pages/CushionPage/CushionPage'
 
 const Link = ({ title, url }) => {
     return (
@@ -18,8 +20,10 @@ const NavLinkDrop = ({ title }) => {
                         {title} <i className="fas fa-caret-down"></i>
                     </button>
                     <div className="dropdown__menu">
-                        <Link title="Login" />
-                        <Link title="Register" />
+                        <Link title="Tẩy trang và Sữa rửa mặt" />
+                        <Link title="Son môi" />
+                        <Link title='Trang điểm mắt'/>
+                        <Link to="/cleansing">Explore Now</Link>
                     </div>
                 </div>
             </li>

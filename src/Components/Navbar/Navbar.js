@@ -11,7 +11,7 @@ class Navbar extends React.Component {
             isLoggedIn: false,
             username: "User"
         }
-    }
+    } 
 
     render() {
         return (
@@ -21,10 +21,10 @@ class Navbar extends React.Component {
                         <NavLogo />
                         <div className="navbar__links__wrapper">
                             <ul className="navbar__links">
-                                <NavLink title="Home" />
-                                <NavLink title="Categories" />
+                                <NavLink href={"http://localhost:3000/eye"} title="Home" />
+                                <NavLinkDrop title="Categories" />
                                 <NavLink title="Cart" />
-                                <NavLinkDrop title={this.state.username} />
+                                <NavLink title='Log out'/>
                             </ul>
                         </div>
                     </div>
